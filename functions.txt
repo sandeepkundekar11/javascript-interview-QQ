@@ -1,0 +1,96 @@
+Certainly! Here are the answers to the questions you provided:
+
+1. **How do you define a function in JavaScript?**
+   Functions in JavaScript can be defined using either function declarations or function expressions.
+   
+   **Function Declaration:**
+   ```javascript
+   function greet(name) {
+     return "Hello, " + name + "!";
+   }
+   ```
+   
+   **Function Expression:**
+   ```javascript
+   var greet = function(name) {
+     return "Hello, " + name + "!";
+   };
+   ```
+
+2. **What is the difference between function declarations and function expressions?**
+   - Function declarations are hoisted to the top of their containing scope, so they can be called before they are defined in the code.
+   - Function expressions are not hoisted, and you can only call them after they are defined.
+
+3. **How do you pass arguments to a function?**
+   You can pass arguments to a function by placing them within the parentheses when you call the function.
+   
+   ```javascript
+   function add(x, y) {
+     return x + y;
+   }
+   
+   var result = add(3, 5); // result is 8
+   ```
+
+4. **What is a callback function? Provide an example.**
+   A callback function is a function that's passed as an argument to another function and is intended to be executed later, often in response to an event or an asynchronous operation.
+
+   ```javascript
+   function doSomething(callback) {
+     console.log("Doing something...");
+     callback();
+   }
+
+   function afterDoingSomething() {
+     console.log("After doing something.");
+   }
+
+   doSomething(afterDoingSomething);
+   ```
+
+5. **Explain the concept of higher-order functions.**
+   A higher-order function is a function that takes one or more functions as arguments or returns a function as its result. They enable abstraction and allow you to write more generic and reusable code.
+
+6. **What is a closure? Provide an example involving a closure.**
+   A closure is a function that retains access to variables from its containing (enclosing) scope even after that scope has finished executing. This allows for maintaining state and creating private variables.
+
+   ```javascript
+   function counter() {
+     var count = 0;
+     return function() {
+       return count++;
+     };
+   }
+
+   var increment = counter();
+   console.log(increment()); // 0
+   console.log(increment()); // 1
+   ```
+
+7. **How do you use the bind, call, and apply methods to manipulate the `this` context of a function?**
+   - The `bind` method returns a new function with a specific `this` context.
+   - The `call` method calls a function with a specified `this` context and arguments.
+   - The `apply` method is similar to `call` but takes an array of arguments.
+
+8. **What is the purpose of the arguments object?**
+   The `arguments` object is an array-like object available inside functions that contains the arguments passed to the function. It allows you to access all the arguments, even if they were not explicitly named in the function's parameter list.
+
+9. **Explain the concept of function currying.**
+   Function currying is a technique where a function that takes multiple arguments is transformed into a series of functions that take one argument each. Each function returns another function until all arguments are received, at which point the final result is returned.
+
+   ```javascript
+   function multiply(a) {
+     return function(b) {
+       return a * b;
+     };
+   }
+
+   var double = multiply(2);
+   var triple = multiply(3);
+
+   console.log(double(5)); // 10
+   console.log(triple(5)); // 15
+   ```
+
+10. **What are arrow functions? How do they differ from regular functions?**
+    Arrow functions are a more concise way to write function expressions in JavaScript. They have a shorter syntax and do not bind their own `this`. Arrow functions are especially useful for shorter one-line functions and have a more predictable behavior for the `this` context.

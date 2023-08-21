@@ -1,0 +1,73 @@
+Certainly! Here are the answers to the questions you provided:
+
+1. **What is an object in JavaScript?**
+   An object in JavaScript is a composite data type that represents a collection of key-value pairs, where each key is a string (or Symbol) and each value can be any data type, including other objects.
+
+2. **How do you create an object using object literals?**
+   Object literals allow you to create objects directly with curly braces `{}` and define properties and methods within them.
+
+   ```javascript
+   var person = {
+     name: "Alice",
+     age: 30,
+     greet: function() {
+       console.log("Hello, " + this.name + "!");
+     }
+   };
+   ```
+
+3. **What are constructors and how do you use them to create objects?**
+   Constructors are functions used to create instances of objects with shared properties and methods. They are called using the `new` keyword.
+
+   ```javascript
+   function Person(name, age) {
+     this.name = name;
+     this.age = age;
+   }
+
+   var alice = new Person("Alice", 30);
+   ```
+
+4. **Explain the prototype chain.**
+   The prototype chain is a mechanism in JavaScript that allows objects to inherit properties and methods from other objects. When a property or method is accessed on an object, JavaScript searches for it in the object itself and then in its prototype chain until it's found or until the end of the chain is reached.
+
+5. **What is prototypal inheritance?**
+   Prototypal inheritance is a way objects can inherit properties and methods from other objects via their prototype chain. Objects act as prototypes for other objects, allowing the sharing of behavior and properties.
+
+6. **How do you add properties and methods to an existing object?**
+   You can add properties and methods to an existing object by simply assigning values or functions to new or existing keys.
+
+   ```javascript
+   var person = {
+     name: "Alice"
+   };
+
+   person.age = 30;
+   person.greet = function() {
+     console.log("Hello!");
+   };
+   ```
+
+7. **What is the purpose of the `new` keyword when creating objects?**
+   The `new` keyword is used to create instances of constructor functions. It initializes a new object, sets its prototype to the constructor's prototype, and allows the constructor function to set initial properties and behavior.
+
+8. **How can you implement inheritance in JavaScript?**
+   Inheritance can be implemented through prototype chaining. Child objects can inherit properties and methods from their parent objects' prototypes.
+
+9. **What is the class keyword introduced in ES6? How does it relate to prototypes?**
+   The `class` keyword in ES6 provides a more structured and class-like way to define objects and their behavior. Under the hood, JavaScript's classes still use prototypes for inheritance. The `class` syntax simplifies the process of creating constructor functions and handling inheritance.
+
+10. **What is a mixin? How can you use it to extend an object?**
+    A mixin is a way to add properties and methods from one object to another, creating a combined object with the merged behavior. Mixins can be used to extend the functionality of objects without modifying their prototypes.
+
+    ```javascript
+    var canSwim = {
+      swim: function() {
+        console.log("Swimming!");
+      }
+    };
+
+    var duck = {};
+    Object.assign(duck, canSwim); // Mixing in the swim method
+    duck.swim(); // Output: "Swimming!"
+    ```

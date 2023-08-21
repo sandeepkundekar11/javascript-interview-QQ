@@ -1,0 +1,69 @@
+Certainly! Here are the answers to the questions you provided:
+
+1. **How do you iterate over an array in JavaScript?**
+   You can iterate over an array using various methods, such as `for` loops, `forEach`, `for...of`, and `map`.
+
+   ```javascript
+   var numbers = [1, 2, 3, 4];
+   
+   // Using forEach
+   numbers.forEach(function(number) {
+     console.log(number);
+   });
+   ```
+
+2. **Explain the difference between forEach, map, filter, and reduce array methods.**
+   - `forEach`: Iterates through each element of an array and executes a provided function for each element.
+   - `map`: Creates a new array by applying a provided function to each element in the original array.
+   - `filter`: Creates a new array with all elements that pass a provided test (specified by a function).
+   - `reduce`: Reduces an array to a single value by applying a function against an accumulator and each element.
+
+3. **How do you add and remove elements from an array?**
+   - Adding: You can use methods like `push`, `unshift`, or `splice` to add elements to an array.
+   - Removing: Methods like `pop`, `shift`, or `splice` are used to remove elements from an array.
+
+4. **What is the purpose of the splice method?**
+   The `splice` method in JavaScript can be used to add or remove elements from an array at a specified index. It also allows you to replace elements with new ones.
+
+5. **How can you flatten a nested array?**
+   You can flatten a nested array using various methods, such as recursion, loops, or the `flat` method (introduced in ES2019).
+
+   ```javascript
+   var nestedArray = [1, [2, [3, 4], 5], 6];
+   var flattenedArray = nestedArray.flat(Infinity);
+   ```
+
+6. **What are array-like objects? Provide an example.**
+   Array-like objects are objects that resemble arrays in that they have numeric indices and a `length` property, but they lack built-in array methods like `forEach`. An example is the `arguments` object inside a function.
+
+   ```javascript
+   function showArguments() {
+     console.log(arguments[0]);
+     console.log(arguments.length);
+   }
+
+   showArguments("Hello", "World"); // Output: "Hello", 2
+   ```
+
+7. **How do you sort an array in JavaScript?**
+   You can use the `sort` method to sort an array. By default, it sorts elements as strings. For custom sorting, you can provide a comparison function.
+
+   ```javascript
+   var numbers = [3, 1, 4, 1, 5, 9, 2, 6];
+   numbers.sort(); // Sorted: [1, 1, 2, 3, 4, 5, 6, 9]
+   ```
+
+8. **Explain the concept of shallow and deep copying arrays.**
+   - Shallow Copy: Creates a new array with a copy of the original array's elements. However, if the elements are objects or arrays, the new array will still reference the same objects.
+   - Deep Copy: Creates a completely independent copy of the original array and its elements, ensuring that any nested objects are also cloned.
+
+9. **How do you find the index of an element in an array?**
+   You can use the `indexOf` method to find the index of a specific element in an array. If the element is not found, it returns -1.
+
+   ```javascript
+   var fruits = ["apple", "banana", "orange"];
+   var index = fruits.indexOf("banana"); // index is 1
+   ```
+
+10. **What are typed arrays in JavaScript?**
+    Typed arrays are a set of array-like objects introduced in JavaScript for handling binary data efficiently. They provide a way to work with raw binary data in various numeric data types (like `Int8Array`, `Uint8Array`, `Float32Array`, etc.) and perform operations directly on the binary data without unnecessary conversions.

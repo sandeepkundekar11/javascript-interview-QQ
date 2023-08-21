@@ -1,0 +1,68 @@
+
+1. **How do you declare variables in JavaScript?**
+   Variables in JavaScript are declared using the `var`, `let`, or `const` keyword, followed by the variable name.
+
+2. **What is the difference between var, let, and const?**
+   - `var` has function-level scope and is hoisted to the top of its containing function or global scope.
+   - `let` and `const` are block-scoped and have more predictable behavior in terms of scoping and hoisting.
+   - `let` allows variable reassignment, while `const` declares a constant value that can't be reassigned after declaration.
+
+3. **What are the primitive data types in JavaScript?**
+   The primitive data types in JavaScript are:
+   - `number`: Represents numeric values.
+   - `string`: Represents text values.
+   - `boolean`: Represents true or false values.
+   - `null`: Represents the intentional absence of any value.
+   - `undefined`: Represents a variable that has been declared but hasn't been assigned a value.
+   - `symbol` (added in ES6): Represents unique, immutable values often used as object property identifiers.
+
+4. **What is type coercion? Provide examples.**
+   Type coercion is the automatic conversion of one data type to another by the JavaScript engine. For example, when concatenating a string and a number, JavaScript coerces the number to a string before concatenation.
+
+   ```javascript
+   var x = 5;
+   var y = "10";
+   var result = x + y; // Result will be the string "510"
+   ```
+
+5. **What is the difference between null and undefined?**
+   - `null` represents the intentional absence of any value. It's often used to indicate that a variable should be empty or reset.
+   - `undefined` indicates that a variable has been declared but hasn't been assigned any value yet.
+
+6. **How do you check the data type of a variable?**
+   You can use the `typeof` operator to check the data type of a variable.
+
+   ```javascript
+   var x = 5;
+   console.log(typeof x); // Output: "number"
+   ```
+
+7. **How do you convert a string to a number and vice versa?**
+   To convert a string to a number, you can use `parseInt` or `parseFloat`. To convert a number to a string, you can concatenate it with an empty string or use the `toString` method.
+
+   ```javascript
+   var str = "10";
+   var num = parseInt(str); // Convert string to integer
+
+   var num = 5;
+   var str = num.toString(); // Convert number to string
+   ```
+
+8. **What is NaN? How is it checked?**
+   `NaN` stands for "Not-a-Number" and is a special value representing an unrepresentable value resulting from an undefined or erroneous mathematical operation. You can check if a value is `NaN` using the `isNaN()` function.
+
+   ```javascript
+   console.log(isNaN(5));     // Output: false
+   console.log(isNaN("Hello")); // Output: true
+   ```
+
+9. **How do you declare and use arrays in JavaScript?**
+   Arrays in JavaScript are declared using square brackets `[]`. They can hold multiple values of different data types.
+
+   ```javascript
+   var fruits = ["apple", "banana", "orange"];
+   console.log(fruits[0]); // Output: "apple"
+   ```
+
+10. **Explain the concept of object cloning.**
+    Object cloning refers to creating a copy of an existing object. There are shallow and deep cloning methods. Shallow cloning creates a new object with the same properties and values at the top level. Deep cloning creates a new object and recursively clones all nested objects and their properties. It's important to consider the implications of object references during cloning to avoid unintended changes to the original object.

@@ -1,0 +1,70 @@
+Certainly! Here are the answers to the questions you provided:
+
+1. **What is the DOM (Document Object Model)?**
+   The DOM is a programming interface for web documents. It represents the structure of an HTML or XML document as a tree of objects. Each object corresponds to a part of the document, such as elements, attributes, and text.
+
+2. **How do you access and manipulate elements in the DOM?**
+   You can access elements using methods like `getElementById`, `querySelector`, and more. Once you have a reference to an element, you can manipulate its properties, attributes, and content using JavaScript.
+
+3. **What are event listeners? How do you attach them to elements?**
+   Event listeners are functions that respond to events (like clicks or key presses) triggered by user actions. You can attach event listeners to elements using methods like `addEventListener`.
+
+   ```javascript
+   var button = document.getElementById("myButton");
+   button.addEventListener("click", function() {
+     console.log("Button clicked!");
+   });
+   ```
+
+4. **Explain event propagation and bubbling.**
+   Event propagation is the process by which events in the DOM are handled. Bubbling is a type of event propagation where the event starts from the target element and bubbles up through its ancestors, triggering handlers on each element.
+
+5. **How can you prevent the default behavior of an event?**
+   You can use the `preventDefault()` method within an event handler to prevent the default action associated with an event, such as following a link or submitting a form.
+
+   ```javascript
+   var link = document.getElementById("myLink");
+   link.addEventListener("click", function(event) {
+     event.preventDefault();
+     console.log("Link clicked, but default action prevented.");
+   });
+   ```
+
+6. **How do you dynamically create and append elements to the DOM?**
+   You can use methods like `createElement` to create new elements and `appendChild` to add them to the DOM.
+
+   ```javascript
+   var newElement = document.createElement("div");
+   newElement.textContent = "New Element";
+   document.body.appendChild(newElement);
+   ```
+
+7. **What is the purpose of the setAttribute and getAttribute methods?**
+   `setAttribute` is used to set the value of an attribute on an element, and `getAttribute` is used to retrieve the value of an attribute.
+
+   ```javascript
+   var element = document.getElementById("myElement");
+   element.setAttribute("class", "highlight");
+   var className = element.getAttribute("class");
+   ```
+
+8. **How do you manipulate CSS classes of an element using JavaScript?**
+   You can use the `classList` property to manipulate CSS classes. It provides methods like `add`, `remove`, and `toggle` to modify classes.
+
+   ```javascript
+   var element = document.getElementById("myElement");
+   element.classList.add("active");
+   element.classList.remove("inactive");
+   ```
+
+9. **What is event delegation and why is it useful?**
+   Event delegation is a technique where you attach a single event listener to a parent element to handle events for its child elements. This is useful for dynamically created or numerous elements, as it reduces the number of event listeners.
+
+10. **How can you fetch and modify the content of an HTML element using JavaScript?**
+    You can use the `textContent` or `innerHTML` properties to fetch or modify the content of an HTML element. `textContent` returns or sets the text content, while `innerHTML` returns or sets the HTML content, allowing you to manipulate the content as text or HTML.
+
+    ```javascript
+    var paragraph = document.getElementById("myParagraph");
+    console.log(paragraph.textContent); // Fetch content
+    paragraph.innerHTML = "New <strong>content</strong>"; // Modify content
+    ```

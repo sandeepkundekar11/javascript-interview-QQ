@@ -1,0 +1,52 @@
+
+1. **What is JavaScript?**
+   JavaScript is a high-level, versatile, interpreted programming language primarily used for adding interactivity and dynamic behavior to web pages. It runs in web browsers and can manipulate the Document Object Model (DOM), handle user interactions, and interact with servers to fetch and display data.
+
+2. **What are the key features of JavaScript?**
+   - **Interactivity:** JavaScript allows users to interact with web pages, making them more engaging.
+   - **Dynamic Content:** It enables updating content without reloading the entire page.
+   - **Event Handling:** JavaScript responds to user actions like clicks and keyboard inputs.
+   - **Asynchronous Programming:** It can handle tasks asynchronously, improving responsiveness.
+   - **Client-Side Validation:** JavaScript can validate user input before sending data to the server.
+   - **Manipulating DOM:** JavaScript can add, modify, and remove elements from the web page.
+   - **Cross-Browser Compatibility:** It's supported by most modern web browsers.
+
+3. **How is JavaScript different from Java?**
+   Despite their similar names, JavaScript and Java are distinct languages:
+   - JavaScript is primarily used for web development and runs in browsers.
+   - Java is a general-purpose programming language used for various applications, including web backends, mobile apps, and more.
+   - JavaScript is interpreted, while Java is compiled to bytecode.
+   - They have different syntax, semantics, and ecosystems.
+
+4. **How do you include JavaScript in an HTML document?**
+   JavaScript can be included in an HTML document using the `<script>` element. You can either include it inline within the HTML or link to an external JavaScript file.
+   
+   Inline:
+   ```html
+   <script>
+     // JavaScript code here
+   </script>
+   ```
+
+   External file:
+   ```html
+   <script src="path/to/script.js"></script>
+   ```
+
+5. **What is an event handler in JavaScript?**
+   An event handler is a function that responds to specific events, such as user actions like clicks, keypresses, or form submissions. It's attached to an HTML element and executed when the event occurs.
+
+6. **Explain the concept of hoisting.**
+   Hoisting is a JavaScript behavior where variable and function declarations are moved to the top of their containing scope during compilation. While declarations are hoisted, assignments are not. This means you can use variables before they're declared, but they will have an initial value of `undefined`.
+
+7. **What is the purpose of the use strict directive?**
+   The `'use strict'` directive is used to enable strict mode in JavaScript code. It helps catch common coding mistakes and "unsafe" actions, improving code quality and making the code less error-prone. Strict mode also disallows certain legacy JavaScript features.
+
+8. **What is an immediately-invoked function expression (IIFE)?**
+   An IIFE is a JavaScript function that's defined and executed immediately after its creation. It's often used to create a new scope for variables to avoid polluting the global scope and to encapsulate code.
+
+9. **What is the significance of the `this` keyword in JavaScript?**
+   The `this` keyword in JavaScript refers to the current execution context or the object that the current code is being executed in. Its value can change based on how a function is called. It's often used to refer to the object that owns the currently executing code.
+
+10. **Explain the concept of closure.**
+    A closure is a function that retains access to variables from its containing (enclosing) scope even after that scope has finished executing. Closures allow for maintaining state, creating private variables, and implementing callback functions. They play a vital role in asynchronous programming and event handling in JavaScript.

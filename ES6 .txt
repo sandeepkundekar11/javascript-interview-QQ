@@ -1,0 +1,52 @@
+Certainly! Here are the answers to the questions you provided:
+
+1. **What are the new features introduced in ES6 (ECMAScript 2015)?**
+   ES6, also known as ECMAScript 2015, introduced several new features, including:
+   - `let` and `const` for variable declaration
+   - Arrow functions
+   - Classes and enhanced object literals
+   - Template literals
+   - Destructuring assignment
+   - Default function parameters
+   - Spread and rest operators
+   - Modules
+   - Promises for asynchronous programming
+   - `async/await` for asynchronous operations
+   - And more!
+
+2. **Explain the purpose of let and const in ES6.**
+   - `let`: Used to declare block-scoped variables that can be reassigned.
+   - `const`: Also declares block-scoped variables, but the value cannot be reassigned after declaration.
+
+3. **What are arrow functions? How do they differ from regular functions?**
+   Arrow functions are a shorter syntax for defining functions in ES6. They have a more concise syntax, don't bind their own `this`, and can't be used as constructors.
+
+4. **How do you use the spread operator (...) and rest parameters in ES6?**
+   - Spread Operator (`...`): Used to expand elements of an iterable (like an array) into individual elements.
+   - Rest Parameters (`...` in function parameters): Used to collect multiple function arguments into an array.
+
+5. **Explain the concept of destructuring assignment in ES6.**
+   Destructuring assignment allows you to extract values from arrays or objects and assign them to variables in a more concise way.
+
+6. **What are template literals in ES6 and how do they work?**
+   Template literals are string literals that support embedded expressions. They are enclosed by backticks (\`) and allow you to interpolate variables and expressions directly into the string.
+
+7. **How do you create and use classes in ES6?**
+   ES6 introduced the `class` syntax for creating and defining classes. Classes are used as blueprints to create objects with shared properties and methods.
+
+8. **Explain the concept of modules in ES6.**
+   Modules in ES6 allow you to organize code into separate files and export/import functionality between them. This helps in maintaining and organizing large codebases.
+
+9. **What are the Promise and async/await features in ES6 for handling asynchronous operations?**
+   - Promises: Provide a cleaner way to handle asynchronous operations and avoid callback hell.
+   - `async/await`: ES8 feature that provides a more synchronous-like syntax for writing asynchronous code using Promises.
+
+10. **How do you use the fetch API for making HTTP requests?**
+    The `fetch` API is used to make HTTP requests. It returns a Promise that resolves to the response of the request. It provides a modern alternative to `XMLHttpRequest`.
+
+   ```javascript
+   fetch(url)
+     .then(response => response.json())
+     .then(data => console.log(data))
+     .catch(error => console.error("Error:", error));
+   ```

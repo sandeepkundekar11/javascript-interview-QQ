@@ -1,0 +1,85 @@
+Certainly! Here are the answers to the questions you provided:
+
+1. **What are conditional statements in JavaScript? Provide examples.**
+   Conditional statements are used to make decisions in your code based on certain conditions. The most common type is the `if` statement.
+
+   ```javascript
+   var age = 18;
+   if (age >= 18) {
+     console.log("You are an adult.");
+   } else {
+     console.log("You are not an adult.");
+   }
+   ```
+
+2. **How do you use the if, else if, and else statements?**
+   You can use `if`, `else if`, and `else` statements to create a chain of conditions.
+
+   ```javascript
+   var score = 85;
+   if (score >= 90) {
+     console.log("A");
+   } else if (score >= 80) {
+     console.log("B");
+   } else {
+     console.log("C");
+   }
+   ```
+
+3. **What is the purpose of the ternary operator (? :)?**
+   The ternary operator is a concise way to write conditional statements. It takes a condition and returns one of two values based on whether the condition is true or false.
+
+   ```javascript
+   var age = 20;
+   var status = age >= 18 ? "Adult" : "Minor";
+   ```
+
+4. **Explain the switch statement and when to use it.**
+   The `switch` statement is used to evaluate an expression against multiple possible case values. It's useful when you have multiple conditions to check against a single value.
+
+   ```javascript
+   var day = "Monday";
+   switch (day) {
+     case "Monday":
+       console.log("Start of the week");
+       break;
+     case "Friday":
+       console.log("End of the week");
+       break;
+     default:
+       console.log("Other day");
+   }
+   ```
+
+5. **How do you use loops in JavaScript? Explain for, while, and do-while loops.**
+   Loops are used to repeat a block of code. The most common loops are:
+   - `for` loop: Executes a block of code a specific number of times.
+   - `while` loop: Executes a block of code while a condition is true.
+   - `do-while` loop: Similar to `while`, but it guarantees at least one execution of the block.
+
+6. **What is the difference between break and continue statements?**
+   - `break`: Used to exit a loop prematurely when a certain condition is met.
+   - `continue`: Used to skip the rest of the current iteration and move to the next one in the loop.
+
+7. **How can you create a loop that iterates over object properties?**
+   You can use a `for...in` loop to iterate over the properties of an object.
+
+   ```javascript
+   var person = { name: "Alice", age: 30 };
+   for (var key in person) {
+     console.log(key + ": " + person[key]);
+   }
+   ```
+
+8. **Explain the concept of the for...in and for...of loops.**
+   - `for...in`: Used to iterate over the enumerable properties of an object.
+   - `for...of`: Used to iterate over the values of iterable objects like arrays, strings, and more.
+
+9. **How do you generate a range of numbers using loops?**
+   You can use a `for` loop to generate a range of numbers by specifying a starting point, ending point, and step size.
+
+   ```javascript
+   for (var i = 1; i <= 10; i++) {
+     console.log(i); // Outputs numbers from 1 to 10
+   }
+   ```
